@@ -44,7 +44,6 @@ public class SaveMyAppsService extends android.app.Service
         Intent dialogIntent = new Intent(getApplicationContext(), DetectionActivity2.class);
         dialogIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(dialogIntent);
-        Log.i(TAG,"Neel is Behen ka loda");
         ScheduledExecutorService scheduler = Executors
                 .newSingleThreadScheduledExecutor();
         scheduler.scheduleAtFixedRate(new Runnable() {
@@ -55,7 +54,6 @@ public class SaveMyAppsService extends android.app.Service
 
                 // This method will check for the Running apps after every 100ms
 
-                Log.i(TAG,"Neel is maha  chutiya");
                 checkRunningApps();
 
 
@@ -85,7 +83,6 @@ public class SaveMyAppsService extends android.app.Service
             Intent dialogIntent = new Intent(getApplicationContext(), DetectionActivity2.class);
             dialogIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             startActivity(dialogIntent);
-            Log.i(TAG,"Neel is maha maha chutiya");
             stop();
         }
     }
